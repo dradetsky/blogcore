@@ -1,0 +1,7 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Thunk Juice Redux'
+theme = 'nostyleplease'
+
+[params.theme_config]
+appearance        = "dark"
