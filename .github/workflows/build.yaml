@@ -14,6 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
+          token: ${{ secrets.GH_TOKEN }}
           submodules: true
       - uses: lowply/build-hugo@v0.140.0
       - uses: actions/upload-artifact@v4
