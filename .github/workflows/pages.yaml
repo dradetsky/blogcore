@@ -24,11 +24,16 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      # NOTE: It might seem to the uninitiated observer that uploading & then
+      # downloading & then uploading the artifact is a mistake. It's intentional
+      # and meant for a future use-case.
       - uses: actions/download-artifact@v4
         with:
           name: site-public
           path: ./public
-      - name: Upload to Pages
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+      - name: Deploy to Pages
+        uses: actions/deploy-pages@v4
