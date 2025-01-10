@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://dradetsky.github.io/blogcore/'
 languageCode = 'en-us'
 title = 'Thunk Juice Redux'
 theme = 'nostyleplease'
