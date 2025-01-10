@@ -14,3 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jakejarvis/hugo-build-action@v0.111.3
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site-public
+          retention-days: 1
+          path: ./public
+          if-no-files-found: error
