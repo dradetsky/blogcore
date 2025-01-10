@@ -21,6 +21,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: true
       - uses: jakejarvis/hugo-build-action@v0.111.3
       - name: ls build
         run: ls -R ./public
