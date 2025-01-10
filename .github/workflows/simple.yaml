@@ -22,6 +22,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: jakejarvis/hugo-build-action@v0.111.3
+      - name: ls build
+        run: ls -R ./public
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
