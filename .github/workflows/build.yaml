@@ -2,10 +2,7 @@ name: build site
 
 on:
   workflow_dispatch:
-
-concurrency:
-  group: pages
-  cancel-in-progress: false
+  workflow_call:
 
 defaults:
   run:
