@@ -3,4 +3,4 @@
 	url = https://github.com/hanwenguo/hugo-theme-nostyleplease
 [submodule "content"]
 	path = content
-	url = git@github.com:dradetsky/blog-content.git
+	url = git@github.com:dradetsky/public-blog-content.git
